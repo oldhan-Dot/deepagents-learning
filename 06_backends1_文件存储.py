@@ -28,7 +28,7 @@ main_agent = create_deep_agent(
     system_prompt="""
         你是一个智能助手，可以使用文件工具进行文件读写操作！但是只有在用户明确要求的情况下，你才可以创建文件
     """,
-    backend=FilesystemBackend("./output/backend_file.txt")
+    backend=FilesystemBackend("output/backend_file")
 )
 
 result = main_agent.invoke({
